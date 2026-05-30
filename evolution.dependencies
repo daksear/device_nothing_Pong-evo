@@ -17,10 +17,10 @@
         "branch": "lineage-23.2"
     },
     {
-        "repository": "joshuah345/proprietary_vendor_nothing_Pong",
+        "repository": "https://github.com/Evolution-X-Devices/vendor_nothing_Pong.git",
         "target_path": "vendor/nothing/Pong",
-        "remote": "gitlab",
-        "branch": "lineage-23.2"
+        "remote": "github",
+        "branch": "bka"
     },
     {
         "repository": "NullDebris/hardware_dolby",
