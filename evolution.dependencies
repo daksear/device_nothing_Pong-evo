@@ -17,9 +17,8 @@
         "branch": "lineage-23.2"
     },
     {
-        "repository": "https://github.com/Evolution-X-Devices/vendor_nothing_Pong.git",
+        "repository": "Evolution-X-Devices/vendor_nothing_Pong",
         "target_path": "vendor/nothing/Pong",
-        "remote": "github",
         "branch": "bka"
     },
     {
