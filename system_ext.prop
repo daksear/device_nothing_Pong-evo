@@ -6,8 +6,6 @@ ro.qc.sdk.audio.fluencetype=none
 sys.brightness.disable_gamma_conversion=true
 
 # Bluetooth
-bluetooth.hfp.codec_aptx_voice.enabled=true
-bluetooth.hfp.swb.aptx.power_management.enabled=true
 bluetooth.leaudio.dual_bidirection_swb.supported=true
 bluetooth.profile.pbap.sim.enabled=true
 bluetooth.profile.sap.server.enabled=true
@@ -66,8 +64,8 @@ persist.vendor.data.mode=concurrent
 ro.vendor.use_data_netmgrd=true
 
 # Nothing feature
-ro.build.nothing.feature.base=0x800001004458438124a040106b4247b97ffL
-ro.build.nothing.feature.diff.device.Pong=0x3044002001aa4144ac04803d1842000L
+ro.build.nothing.feature.base=0xe24800001004458438124a040106b4247b97ffL
+ro.build.nothing.feature.diff.device.Pong=0x24100003044002001aa4144ac04803d1842000L
 
 # Radio
 ril.subscription.types=NV,RUIM

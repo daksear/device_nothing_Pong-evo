@@ -195,6 +195,9 @@
          available on some devices. -->
     <bool name="config_enableHapticTextHandle">true</bool>
 
+    <!-- Bytes that the PinnerService will pin for WebView -->
+    <integer name="config_pinnerWebviewPinBytes">20971520</integer>
+
     <!-- Doze: should the TYPE_PICK_UP_GESTURE sensor be used as a pulse signal. -->
     <bool name="config_dozePulsePickup">true</bool>
 
@@ -256,19 +259,30 @@
         <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
         <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
         <item>"/system/bin/surfaceflinger"</item>
+        <item>"/system/framework/ext.jar"</item>
         <item>"/system/framework/framework.jar"</item>
         <item>"/system/framework/services.jar"</item>
         <item>"/system/lib64/libEGL.so"</item>
         <item>"/system/lib64/libGLESv2.so"</item>
+        <item>"/system/lib64/libGLESv3.so"</item>
+        <item>"/system/lib64/libgui.so"</item>
         <item>"/system/lib64/libhwui.so"</item>
+        <item>"/system/lib64/libui.so"</item>
+        <item>"/system/lib64/libvulkan.so"</item>
         <item>"/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
         <item>"/vendor/lib64/libcamxexternalformatutils.so"</item>
         <item>"/vendor/lib64/libipebpsstriping170.so"</item>
         <item>"/vendor/lib64/libipebpsstriping.so"</item>
+        <item>"/vendor/lib64/egl/eglSubDriverAndroid.so"</item>
         <item>"/vendor/lib64/egl/libEGL_adreno.so"</item>
         <item>"/vendor/lib64/egl/libGLESv2_adreno.so"</item>
+        <item>"/vendor/lib64/hw/vulkan.adreno.so"</item>
+        <item>"/vendor/lib64/libadreno_utils.so"</item>
         <item>"/vendor/lib64/libCB.so"</item>
+        <item>"/vendor/lib64/libOpenCL.so"</item>
         <item>"/vendor/lib64/libgsl.so"</item>
+        <item>"/vendor/lib64/libkcl.so"</item>
+        <item>"/vendor/lib64/libkernelmanager.so"</item>
         <item>"/vendor/lib64/libllvm-glnext.so"</item>
         <item>"/vendor/lib64/libllvm-qcom.so"</item>
         <item>"/vendor/lib64/libllvm-qgl.so"</item>
@@ -279,6 +293,9 @@
 
     <!-- Bytes that the PinnerService will pin for Home app -->
     <integer name="config_pinnerHomePinBytes">6291456</integer>
+
+    <!-- True if the device supports Sustained Performance Mode -->
+    <bool name="config_sustainedPerformanceModeSupported">true</bool>
 
     <!-- The bounding path of the cutout region of the main built-in display.
          Must either be empty if there is no cutout region, or a string that is parsable by
@@ -326,7 +343,7 @@
     <string name="config_dozeTapSensorType" translatable="false">org.lineageos.sensor.single_touch</string>
 
     <!-- Fingerprint from stock ROM -->
-    <string name="config_stockFingerprint" translatable="false">Nothing/Pong/Pong:12/SKQ1.250415.001/2512261110:user/release-keys</string>
+    <string name="config_stockFingerprint" translatable="false">Nothing/Pong/Pong:12/SKQ1.250415.001/2606181026:user/release-keys</string>
 
     <integer translatable="false" name="config_brightness_ramp_rate_slow">50</integer>
     
@@ -514,5 +531,8 @@
          May be less than the minimum allowed brightness setting
          that can be set by the user. -->
      <integer name="config_screenBrightnessDoze">12</integer>
+
+     <!-- The amount to scale fullscreen snapshots for Overview and snapshot starting windows. -->
+     <item name="config_highResTaskSnapshotScale" format="float" type="dimen">0.7</item>
  
 </resources>

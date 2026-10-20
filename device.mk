@@ -234,6 +234,9 @@ PRODUCT_PACKAGES += \
     ueventd.nt.rc \
     ueventd.qcom.rc
 
+# Kernel
+PRODUCT_ENABLE_UFFD_GC := true
+
 # Keymint
 PRODUCT_PACKAGES += \
     android.hardware.hardware_keystore.xml
@@ -427,10 +430,6 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom-caf/common/libqti-perfd-client \
     packages/apps/GlyphAdapter \
     packages/apps/ParanoidGlyph
-
-# Shims
-PRODUCT_PACKAGES += \
-    lib_shim_ntcamera
 
 # Task Profiles
 PRODUCT_COPY_FILES += \
